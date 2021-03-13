@@ -1,0 +1,37 @@
+.container-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grow  {
+  flex: 1;
+}
+
+.center-div {
+  margin: 0 auto;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.all-screen {
+  min-height: 100vh;
+}
+
+.item {
+  padding: 0.5em;
+}
