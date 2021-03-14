@@ -2,7 +2,7 @@ import { PdfGeneratorTemplate } from "@infrastructure/pdfGenerator/PdfGeneratorT
 import { buildLogger } from "@config/LoggerConfig";
 import { CV_ENDPOINT } from "@env";
 
-export class CurriculumVitaePdf extends PdfGeneratorTemplate {
+export class CvPdfAdapter extends PdfGeneratorTemplate {
   private readonly endpoint = CV_ENDPOINT;
 
   constructor() {
@@ -14,4 +14,4 @@ export class CurriculumVitaePdf extends PdfGeneratorTemplate {
   }
 }
 
-export default new CurriculumVitaePdf();
+export default new CvPdfAdapter();

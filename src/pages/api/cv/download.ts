@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import CurriculumVitaePdf from "@infrastructure/pdfGenerator/CurriculumVitaePdf/CurriculumVitaePdf";
+import CurriculumVitaePdf from "@infrastructure/pdfGenerator/CurriculumVitaePdf/CvPdfAdapter";
 
 const download = async (
   req: NextApiRequest,
