@@ -1,8 +1,11 @@
 import { PdfGeneratorTemplate } from "@infrastructure/pdfGenerator/PdfGeneratorTemplate";
 import { buildLogger } from "@config/LoggerConfig";
 import { CV_ENDPOINT } from "@env";
+import { IGenerateCvDocumentPort } from "@ports/IGenerateCvDocumentPort";
 
-export class CvPdfAdapter extends PdfGeneratorTemplate {
+export class CvPdfAdapter
+  extends PdfGeneratorTemplate
+  implements IGenerateCvDocumentPort {
   private readonly endpoint = CV_ENDPOINT;
 
   constructor() {
