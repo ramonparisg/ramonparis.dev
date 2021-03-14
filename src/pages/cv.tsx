@@ -4,7 +4,7 @@ import { GetServerSideProps, NextPage } from "next";
 import { CurriculumVitaeDtoResponse } from "@payloads/response/CurriculumVitaeDtoResponse";
 import adapter from "@infrastructure/httpClient/BaseApi/CurriculumVitaeHttpClient";
 
-const Home: NextPage<CurriculumVitaeDtoResponse> = ({ data }) => {
+const Resume: NextPage<CurriculumVitaeDtoResponse> = ({ data }) => {
   return (
     <>
       <MainPageCvTemplate data={data} />
@@ -22,4 +22,4 @@ export const getServerSideProps: GetServerSideProps<CurriculumVitaeDtoResponse> 
   };
 };
 
-export default Home;
+export default Resume;
