@@ -20,7 +20,7 @@ const CvTemplate: React.FC<Props> = () => {
         </div>
       </div>
       <div id={"page-2"}>
-        <div className={"w-100 test-border"}>Backend</div>
+        {/*<div className={"w-100 test-border"}>Backend</div>*/}
       </div>
     </>
   );

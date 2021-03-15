@@ -1,24 +1,28 @@
 .small {
   font-size: 14px;
   word-break: break-word;
+  white-space: break-spaces;
 }
 
 .medium {
   font-size: 16px;
   word-break: break-word;
+  white-space: break-spaces;
 }
 
 .big {
   font-size: 24px;
   word-break: break-word;
+  white-space: break-spaces;
 }
 .big sup {
   font-size: 10px;
 }
 
 .xl {
-  font-size: 26px;
+  font-size: 36px;
   word-break: break-word;
+  white-space: break-spaces;
 }
 .xl sup {
   margin-left: 2px;
@@ -28,6 +32,7 @@
 .xs {
   font-size: 12px;
   word-break: break-word;
+  white-space: break-spaces;
 }
 
 /*# sourceMappingURL=Text.module.css.map */
