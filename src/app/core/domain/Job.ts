@@ -19,6 +19,6 @@ export interface JobTitle {
 export interface Job {
   id: string;
   company: string;
-  imgUrl: string;
+  imgUrl?: string;
   titles: JobTitle[];
 }

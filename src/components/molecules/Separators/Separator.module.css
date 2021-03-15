@@ -1,0 +1,18 @@
+.separator {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+.separator:after, .separator:before {
+  content: "";
+  border-top: 3px solid;
+  margin: 0 1rem;
+}
+.separator:after {
+  flex-grow: 1;
+}
+.separator:before {
+  width: 10%;
+}
+
+/*# sourceMappingURL=Separator.module.css.map */

@@ -1,6 +1,8 @@
 export enum Expertise {
   EXPERT,
+  MEDIUM_HIGH,
   MEDIUM,
+  MEDIUM_LOW,
   BEGINNER,
 }
 
@@ -13,7 +15,8 @@ export interface Knowledge {
   id: string;
   knowledgeCategory: KnowledgeCategory;
   name: string;
-  imgUrl: string;
+  imgUrl?: string;
   description: string;
+  technologies: string;
   knowledgeExpertise: Expertise;
 }

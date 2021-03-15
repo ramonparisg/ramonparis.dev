@@ -1,25 +1,29 @@
 // colors
 $color-light-gray: #EBEBEB;
-$color-dark-gray: #828282;
+$color-dark-gray: #636463;
 $color-white: #FFF;
 $color-black: #333;
-$color-blue: #2f80ed;
-$color-dark-blue: #2158a2;
+$color-light-blue: #2f80ed;
+$color-blue: #2158a2;
 $color-yellow: #FFF059;
 $color-light-green: #00B364;
+$color-green: #106924;
 
 $colors: ("light-gray": $color-light-gray,
         "dark-gray": $color-dark-gray,
         "white": $color-white,
         "black": $color-black,
         "blue": $color-blue,
+        "light-blue": $color-light-blue,
         "yellow": $color-yellow,
         "light-green":$color-light-green,
+        "green":$color-green,
 );
 
 // fonts
 $font-family: 'Noto Sans', sans-serif;
-$font-medium-bold-weight: 500;
+$font-big-bold-weight: 900;
+$font-medium-bold-weight: 600;
 $font-light-bold-weight: 100;
 $font-h1-size: 36px;
 $font-h2-size: 24px;
@@ -31,5 +35,9 @@ $font-small-size: 14px;
 $input-size-big: 54px;
 $input-size-medium: 40px;
 $input-size-small: 30px;
+
+
+// specifics
+$left-space-separator: 10%
 
 

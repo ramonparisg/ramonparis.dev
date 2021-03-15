@@ -1,5 +1,5 @@
 import React from "react";
-import MainPageCvTemplate from "../components/template/MainPageCvTemplate/MainPageCvTemplate";
+import CvTemplate from "@components/template/MainPageCvTemplate/CvTemplate";
 import { GetServerSideProps, NextPage } from "next";
 import { CurriculumVitaeDtoResponse } from "@payloads/response/CurriculumVitaeDtoResponse";
 import adapter from "@infrastructure/httpClient/BaseApi/CurriculumVitaeHttpClient";
@@ -7,7 +7,7 @@ import adapter from "@infrastructure/httpClient/BaseApi/CurriculumVitaeHttpClien
 const Home: NextPage<CurriculumVitaeDtoResponse> = ({ data }) => {
   return (
     <>
-      <MainPageCvTemplate data={data} />
+      <CvTemplate data={data} />
     </>
   );
 };

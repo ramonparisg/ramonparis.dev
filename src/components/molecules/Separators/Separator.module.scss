@@ -1,0 +1,20 @@
+@import "../../../styles/base";
+
+.separator {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  &:after, &:before {
+    content: "";
+    border-top: 3px solid;
+    margin: 0 1rem;
+  }
+
+  &:after {
+    flex-grow: 1;
+  }
+
+  &:before {
+    width: $left-space-separator;
+  }
+}

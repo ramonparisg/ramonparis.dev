@@ -2,12 +2,24 @@
 
 
 // weight
+.big-weight {
+  font-weight: $font-big-bold-weight;
+}
+
 .medium-weight {
   font-weight: $font-medium-bold-weight;
 }
 
 .light-weight {
   font-weight: $font-light-bold-weight;
+}
+
+.big-letter-spacing {
+  letter-spacing: 2px;
+}
+
+.small-letter-spacing {
+  letter-spacing: 1px;
 }
 
 // text-align

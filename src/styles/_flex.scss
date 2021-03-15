@@ -8,6 +8,10 @@
   flex-wrap: wrap;
 }
 
+.column-flex {
+  flex-direction: column;
+}
+
 .grow  {
   flex: 1;
 }

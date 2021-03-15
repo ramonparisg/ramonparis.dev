@@ -1,0 +1,37 @@
+@import "../../../styles/base";
+
+.small {
+  font-size: $font-small-size;
+  word-break: break-word;
+
+}
+
+.medium {
+  font-size: $font-size;
+  word-break: break-word;
+
+}
+
+.big {
+  font-size: $font-h2-size;
+  word-break: break-word;
+
+  sup {
+    font-size: 10px;
+  }
+}
+
+.xl {
+  font-size: $font-h1-size;
+  word-break: break-word;
+
+  sup {
+    margin-left: 2px;
+    font-size: 18px;
+  }
+}
+
+.xs {
+  font-size: 12px;
+  word-break: break-word;
+}
