@@ -441,6 +441,18 @@ button, input[type=button] {
   border: 1px #106924 solid;
 }
 
+.orange {
+  color: #E0542F;
+}
+
+.bg-orange {
+  background-color: #E0542F;
+}
+
+.border-orange {
+  border: 1px #E0542F solid;
+}
+
 .borderless {
   border-width: 0;
 }

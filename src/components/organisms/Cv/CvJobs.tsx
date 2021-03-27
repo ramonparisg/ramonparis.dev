@@ -32,7 +32,7 @@ const CvJobs: React.FC = () => {
           id: "2",
           title: "Consultant and fullstack developer",
           description:
-            "Consultant and developer of web applications focused on integrations inside retail's business. For example, payment domains, logistics systems, order management systems, ecommerce systems. \n\nTools: ReactJs, jQuery, JSP, Spring boot, AWS, Terraform, Gitlab configurations ",
+            "Consultant and developer of web applications focused on integrations inside retail's business. For example, payment domains, logistics systems, order management systems, ecommerce systems. Tools: ReactJs, jQuery, JSP, Spring boot, AWS, Terraform, Gitlab configurations ",
           startDate: "Dec 2018",
           endDate: "Oct 2019",
         },
@@ -46,7 +46,7 @@ const CvJobs: React.FC = () => {
           id: "1",
           title: "Scriptwriter",
           description:
-            "Developer and QA of projects focused in Marketing Research: my main responsibilities were develop and do unit testing of surveys for clients in all the world Latin America",
+            "Developer and QA of projects focused in Marketing Research: my main responsibilities were develop and do unit testing of surveys for clients in Latin America and Europe",
           startDate: "May 2017",
           endDate: "Dec 2018",
           knowledgeList: [
