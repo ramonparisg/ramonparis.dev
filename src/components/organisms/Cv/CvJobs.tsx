@@ -7,6 +7,21 @@ import Text from "@components/atoms/Text/Text";
 const CvJobs: React.FC = () => {
   const data = [
     {
+      id: "3",
+      company: "Falabella Retail",
+      titles: [
+        {
+          id: "21",
+          title: "Technical Lead",
+          description:
+            "Technical lead of project focused on orchestrate logistics and payment events through backoffice system of a retail company. Responsibilities: design and develop highly scalable microservices and lead a team of 8 people in India and Chile",
+          startDate: "May 2021",
+          endDate: "Present",
+          status: "ON_GOING",
+        },
+      ],
+    },
+    {
       id: "2",
       company: "RetailSBS",
       titles: [
@@ -14,16 +29,16 @@ const CvJobs: React.FC = () => {
           id: "21",
           title: "Senior Fullstack developer at Falabella Retail",
           description:
-            "Developer of scrum team in charge of develop event driven microservices, refine requirements, help with doubts of the teams members and coordinate integrations with external teams located in India. Tools: Spring boot, ReactJS, Google Cloud Platform, Golang",
+            "Developer of scrum team in charge of develop event driven microservices, design solutions, clarify technical doubts of team members and coordinate integrations with external teams located in India. Tools: Spring boot, ReactJS, GCP",
           startDate: "Feb 2020",
-          endDate: "Present",
+          endDate: "May 2021",
           status: "FINISHED",
         },
         {
           id: "20",
           title: "Fullstack developer at Easy - Cencosud",
           description:
-            "Developer of scrum team in charge of develop and maintain ecommerce system: IBM Commerce. Main technologies used: Spring boot, ReactJS, Amazon Web Services, IBM Commerce V7 y Struts2",
+            "Developer of scrum team in charge of develop and maintain ecommerce system: IBM Commerce. Main technologies used: Spring boot, ReactJS, AWS, IBM Commerce V7 and Struts2",
           startDate: "Oct 2019",
           endDate: "Feb 2020",
           status: "FINISHED",
@@ -32,7 +47,7 @@ const CvJobs: React.FC = () => {
           id: "2",
           title: "Consultant and fullstack developer",
           description:
-            "Consultant and developer of web applications focused on integrations inside retail's business. For example, payment domains, logistics systems, order management systems, ecommerce systems. Tools: ReactJs, jQuery, JSP, Spring boot, AWS, Terraform, Gitlab configurations ",
+            "Consultant and developer of web applications focused on integrations inside retail's business. For example, payment domains, logistics systems, order management systems, ecommerce systems. Tools: ReactJs, Spring boot, AWS, and Terraform",
           startDate: "Dec 2018",
           endDate: "Oct 2019",
         },

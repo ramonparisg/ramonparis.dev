@@ -10,7 +10,7 @@ const CvAcademyStudies: React.FC = () => {
       university: "INACAP University",
       studies: [
         {
-          career: "Software engineer",
+          career: "Software engineering",
           startDate: "2018",
           endDate: "2020",
         },

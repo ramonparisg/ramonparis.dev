@@ -20,7 +20,7 @@ const ProfileImage: React.FC = () => {
         <hr />
         <div className={"mt-2 mb-1"}>
           <Text size={"medium"} className={"light-weight"}>
-            Senior full-stack developer
+            Tech lead and senior full-stack developer
           </Text>
         </div>
       </div>

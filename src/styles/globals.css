@@ -317,6 +317,22 @@ button, input[type=button] {
   max-height: 50%;
 }
 
+.w-30 {
+  width: 30%;
+}
+
+.mw-30 {
+  max-width: 30%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.mh-30 {
+  max-height: 30%;
+}
+
 .w-25 {
   width: 25%;
 }
@@ -453,6 +469,18 @@ button, input[type=button] {
   border: 1px #E0542F solid;
 }
 
+.dark-orange {
+  color: #E0542F;
+}
+
+.bg-dark-orange {
+  background-color: #E0542F;
+}
+
+.border-dark-orange {
+  border: 1px #E0542F solid;
+}
+
 .borderless {
   border-width: 0;
 }
@@ -490,12 +518,16 @@ button, input[type=button] {
   text-align: center;
 }
 
+.left-text {
+  text-align: left;
+}
+
 .big-font {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .small-font {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .lh-1 {

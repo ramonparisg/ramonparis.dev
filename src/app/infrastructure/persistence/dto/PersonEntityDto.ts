@@ -5,6 +5,8 @@ export interface PersonEntityDto {
   firstName: string;
   lastName: string;
   title: string;
+  updatedAt: string;
+  createdAt: string;
   description: string;
   profilePicUrl: string;
   birthdate: Date;

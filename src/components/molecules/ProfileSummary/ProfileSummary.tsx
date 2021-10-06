@@ -12,7 +12,7 @@ const ProfileSummary: React.FC = () => {
         </div>
 
         <div className={"mt-2 lh-3"}>
-          <Text size={"small"} className={"mt-3 justify-text"}>
+          <Text size={"small"} className={"mt-3"}>
             I am a software engineer with a passion for software development,
             good practices, operation of the business and constantly learning
             new technologies and patterns.

@@ -15,5 +15,5 @@ export interface ToolEntityDto {
   imgUrl?: string;
   description: string;
   technologies: string;
-  knowledgeExpertise: ExpertiseEntityDto;
+  knowledgeExpertise: string;
 }

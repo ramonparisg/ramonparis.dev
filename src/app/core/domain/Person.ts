@@ -4,7 +4,7 @@ import { Project } from "@domain/Project";
 import { Job } from "@domain/Job";
 import { Study } from "@domain/Study";
 
-export interface Person {
+export class Person {
   id: string;
   firstName: string;
   lastName: string;
@@ -18,4 +18,10 @@ export interface Person {
   projects: Project[];
   jobs: Job[];
   study: Study;
+
+  constructor() {}
+
+  someBusinessLogic() {
+    // Implement some business logic
+  }
 }

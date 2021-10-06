@@ -1,17 +1,17 @@
 .small {
-  font-size: 14px;
+  font-size: 12px;
   word-break: break-word;
   white-space: break-spaces;
 }
 
 .medium {
-  font-size: 16px;
+  font-size: 14px;
   word-break: break-word;
   white-space: break-spaces;
 }
 
 .big {
-  font-size: 24px;
+  font-size: 21px;
   word-break: break-word;
   white-space: break-spaces;
 }
@@ -20,7 +20,7 @@
 }
 
 .xl {
-  font-size: 36px;
+  font-size: 30px;
   word-break: break-word;
   white-space: break-spaces;
 }
@@ -30,7 +30,7 @@
 }
 
 .xs {
-  font-size: 12px;
+  font-size: 10px;
   word-break: break-word;
   white-space: break-spaces;
 }

@@ -9,6 +9,7 @@ $color-yellow: #FFF059;
 $color-light-green: #00B364;
 $color-green: #106924;
 $color-orange: #E0542F;
+$color-dark-orange: #86351f;
 
 $colors: ("light-gray": $color-light-gray,
         "dark-gray": $color-dark-gray,
@@ -20,6 +21,7 @@ $colors: ("light-gray": $color-light-gray,
         "light-green":$color-light-green,
         "green":$color-green,
         "orange":$color-orange,
+        "dark-orange":$color-orange,
 );
 
 // fonts
@@ -27,11 +29,11 @@ $font-family: 'Noto Sans', sans-serif;
 $font-big-bold-weight: 900;
 $font-medium-bold-weight: 600;
 $font-light-bold-weight: 100;
-$font-h1-size: 36px;
-$font-h2-size: 24px;
-$font-h3-size: 18px;
-$font-size: 16px;
-$font-small-size: 14px;
+$font-h1-size: 30px;
+$font-h2-size: 21px;
+$font-h3-size: 16px;
+$font-size: 14px;
+$font-small-size: 12px;
 
 // inputs
 $input-size-big: 54px;
