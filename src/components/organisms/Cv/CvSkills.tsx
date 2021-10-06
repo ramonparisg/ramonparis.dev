@@ -21,7 +21,7 @@ const CvSkills: React.FC<any> = ({ data }) => {
   const groupedData = groupBy(data, (data) => data.knowledgeCategoryId.name);
   return (
     <>
-      <TitleSeparator color={"orange"}>🤓 Skills</TitleSeparator>
+      <TitleSeparator color={"orange"}>🤓 Technical Skills</TitleSeparator>
       <div className={"container pl-5 pr-5"}>
         {Object.keys(groupedData).map((key, i) => (
           <div key={i} className={`${styles.information} w-100`}>
