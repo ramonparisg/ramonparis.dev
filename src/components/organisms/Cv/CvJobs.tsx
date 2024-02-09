@@ -7,6 +7,23 @@ import Text from "@components/atoms/Text/Text";
 const CvJobs: React.FC = () => {
   const data = [
     {
+      id: "4",
+      company: "Falabella Corp",
+      titles: [
+        {
+          id: "21",
+          title: "Technical Manager",
+          description:
+              `As the leader of the technical leads team, I spearhead the technical design of projects, architect microservices, define development standards, and provide technical support to development teams. My current focus lies in designing and implementing a highly scalable and configurable orchestration system for the three major companies within Falabella Holding (Sodimac, Tottus, and Falabella Retail), spanning across 7 countries. This system is pivotal in handling over 100,000 requests per minute, making it instrumental in managing large-scale events such as Black Friday or cyber sales, thereby adding  significant value to the company.
+
+Key tools and methodologies employed include Hexagonal architecture, DDD, Event-driven design, CQRS, and technologies such as Golang, Java, Spring Boot, ReactJS, Google Cloud Platform (GCP), Kubernetes, Terraform, gRPC, GraphQL, among others.`,
+          startDate: "Nov 2022",
+          endDate: "Present",
+          status: "ON_GOING",
+        },
+      ],
+    },
+    {
       id: "3",
       company: "Falabella Retail",
       titles: [
@@ -14,10 +31,19 @@ const CvJobs: React.FC = () => {
           id: "21",
           title: "Technical Lead",
           description:
-            "Technical lead of project focused on orchestrate logistics and payment events through backoffice system of a retail company. Responsibilities: design and develop highly scalable microservices and lead a team of 8 people in India and Chile",
+            "As the technical lead of a project centered on orchestrating logistics and payment events within the back-office system of a retail company, my responsibilities include designing and developing highly scalable microservices. Additionally, I lead a team of 8 individuals based in both India and Chile.",
           startDate: "May 2021",
-          endDate: "Present",
-          status: "ON_GOING",
+          endDate: "Nov 2022",
+          status: "FINISHED",
+        },
+        {
+          id: "21",
+          title: "Senior Fullstack developer",
+          description:
+              "Developer of event-driven microservices within a Scrum team, responsible for designing solutions, addressing technical queries, and coordinating integrations with external teams in India. Tools used include Java, Spring Boot, ReactJS, and GCP.",
+          startDate: "Feb 2020",
+          endDate: "May 2021",
+          status: "FINISHED",
         },
       ],
     },
@@ -26,65 +52,19 @@ const CvJobs: React.FC = () => {
       company: "RetailSBS",
       titles: [
         {
-          id: "21",
-          title: "Senior Fullstack developer at Falabella Retail",
-          description:
-            "Developer of scrum team in charge of develop event driven microservices, design solutions, clarify technical doubts of team members and coordinate integrations with external teams located in India. Tools: Spring boot, ReactJS, GCP",
-          startDate: "Feb 2020",
-          endDate: "May 2021",
-          status: "FINISHED",
-        },
-        {
-          id: "20",
-          title: "Fullstack developer at Easy - Cencosud",
-          description:
-            "Developer of scrum team in charge of develop and maintain ecommerce system: IBM Commerce. Main technologies used: Spring boot, ReactJS, AWS, IBM Commerce V7 and Struts2",
-          startDate: "Oct 2019",
-          endDate: "Feb 2020",
-          status: "FINISHED",
-        },
-        {
           id: "2",
           title: "Consultant and fullstack developer",
           description:
-            "Consultant and developer of web applications focused on integrations inside retail's business. For example, payment domains, logistics systems, order management systems, ecommerce systems. Tools: ReactJs, Spring boot, AWS, and Terraform",
+            "Consultant and web application developer specializing in retail business integrations. I have collaborated with clients such as Salcobrand, Cencosud, and Caja Los Andes, creating solutions for payment domains, logistics systems, order management, and ecommerce platforms. My toolkit includes ReactJS, Java, Spring Boot, Struts2, AWS, IBM Commerce V7, and Terraform.",
           startDate: "Dec 2018",
-          endDate: "Oct 2019",
-        },
-      ],
-    },
-    {
-      id: "1",
-      company: "Ipsos Interactive Service",
-      titles: [
-        {
-          id: "1",
-          title: "Scriptwriter",
-          description:
-            "Developer and QA of projects focused in Marketing Research: my main responsibilities were develop and do unit testing of surveys for clients in Latin America and Europe",
-          startDate: "May 2017",
-          endDate: "Dec 2018",
-          knowledgeList: [
-            {
-              id: "fake_data",
-              knowledgeCategory: {
-                id: "fake_data",
-                name: "fake_data",
-              },
-              name: "fake_data",
-              imgUrl: "fake_data",
-              description: "fake_data",
-              knowledgeExpertise: "EXPERT",
-            },
-          ],
-          status: "FINISHED",
+          endDate: "Feb 2020",
         },
       ],
     },
   ];
 
   return (
-    <div className={"lh-4"}>
+    <div className={"lh-3"}>
       <TitleSeparator color={"blue"}>💻 Experience</TitleSeparator>
       <div style={{ marginLeft: "5%" }} className={"mt-3"}>
         {data.map((d, i) => (

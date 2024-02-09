@@ -13,9 +13,13 @@ const ProfileSummary: React.FC = () => {
 
         <div className={"mt-2 lh-3"}>
           <Text size={"small"} className={"mt-3"}>
-            I am a software engineer with a passion for software development,
-            good practices, operation of the business and constantly learning
-            new technologies and patterns.
+            I am a software engineer with 7+ of experience, driven by a passion for software development, committed to adhering to best practices,
+            understanding business operations, and continuously expanding my knowledge of new technologies and patterns.
+          </Text>
+          <br/>
+         <Text size={"small"} className={"mt-3"}>
+            Fun fact: This CV are actually react components that dynamically generates a PDF using NextJs + puppeteer.
+             <a href="https://github.com/ramonparisg/ramonparis.dev" className={"underline"}>See more</a>
           </Text>
         </div>
 
@@ -35,9 +39,9 @@ const ProfileSummary: React.FC = () => {
           <Text size={"small"} className={"mt-2"}>
             ☎️ +56 9 9294 9532
           </Text>
-          <a href="https://github.com/ramonparisg">
+          <a href="https://github.com/ramonparisg" className={"underline"}>
             <Text size={"small"} className={"mt-2"}>
-              🐱 ramonparisg
+              Github: ramonparisg
             </Text>
           </a>
         </div>

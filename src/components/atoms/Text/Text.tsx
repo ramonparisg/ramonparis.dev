@@ -4,7 +4,7 @@ import style from "./Text.module.css";
 type Sizes = "xs" | "small" | "medium" | "big" | "xl";
 
 export interface TextProps {
-  children: string | number;
+  children: string | number | React.ReactNode;
   size?: Sizes;
   className?: string;
 }

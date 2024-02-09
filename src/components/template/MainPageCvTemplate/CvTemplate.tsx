@@ -22,20 +22,20 @@ const skills1 = [
   {
     id: "2",
     knowledgeCategoryId: { id: "1", name: "Backend" },
-    name: "JavaScript",
+    name: "Golang",
     description:
-      "Knowledge in async communications, deep understanding of Javascript, Rest API, SQL and non-SQL database connections, secured http communication with JWT and Basic Auth",
-    technologies: "Node Js, Express Js and Jest for unit testing",
-    knowledgeExpertise: "MEDIUM_HIGH",
+        "Deep understanding of Golang, Rest API, gRPC services, Graphql services, SQL and non-SQL database connections, secured http communication with JWT and Basic Auth, event-driven microservices, concurrency and parallelism",
+    technologies: "Vanilla Golang, Gin Gonic, gRPC, wire, cloud integrations, ...others",
+    knowledgeExpertise: "EXPERT",
   },
   {
     id: "3",
     knowledgeCategoryId: { id: "1", name: "Backend" },
-    name: "Golang",
+    name: "JavaScript",
     description:
-      "Knowledge building Rest API, Connecting to SQL Database and communication with queues",
-    technologies: "Vanilla Golang",
-    knowledgeExpertise: "MEDIUM_LOW",
+      "Knowledge in async communications, deep understanding of Javascript, Rest API, SQL and non-SQL database connections, secured http communication with JWT and Basic Auth",
+    technologies: "Node Js, Express Js, Nest Js and Jest for unit testing",
+    knowledgeExpertise: "MEDIUM_HIGH",
   },
   {
     id: "4",
@@ -51,16 +51,51 @@ const skills1 = [
     knowledgeCategoryId: { id: "2", name: "Frontend" },
     name: "CSS",
     description:
-      "Knowledge of flexbox, basic transitions and animations, modifiers and selectors",
-    technologies: "SASS, CSS-in-JS, Vanilla CSS",
+      "Knowledge of flexbox, grids, basic transitions and animations, modifiers and selectors",
+    technologies: "SASS, CSS-in-JS, Vanilla CSS, TailwindCSS",
     knowledgeExpertise: "MEDIUM",
   },
+  {
+    id: "15",
+    knowledgeCategoryId: { id: "6", name: "Architecture" },
+    name: "Microservices",
+    description:
+        "Understanding of microservices, patterns, and best practices.",
+    knowledgeExpertise: "EXPERT",
+  },
+  {
+    id: "16",
+    knowledgeCategoryId: { id: "6", name: "Architecture" },
+    name: "Event-driven design",
+    description:
+        "Experience defining events, consuming them, applying resilience patterns (retry, circuit breaker, dead letter queue), and event-driven architecture patterns. Experience implementing CQRS patterns.",
+    technologies: "Event driven, pub/sub, AsyncAPI, Kafka, RabbitMQ",
+    knowledgeExpertise: "EXPERT",
+  },
+  {
+    id: "17",
+    knowledgeCategoryId: { id: "6", name: "Architecture" },
+    name: "Domain-driven design",
+    description:
+        "Understanding of DDD, Bounded context, Aggregates, Entities, Value objects, Domain events, Domain services, Repositories, Factories, and Application services.",
+    knowledgeExpertise: "EXPERT",
+  },
+  {
+    id: "18",
+    knowledgeCategoryId: { id: "6", name: "Architecture" },
+    name: "Clean architecture & hexagonal architecture",
+    description:
+        "Understanding of clean architecture and its application within hexagonal architecture. Demonstrable experience in the implementation of these patterns in microservices",
+    knowledgeExpertise: "EXPERT",
+  },
+];
+const skills2 = [
   {
     id: "6",
     knowledgeCategoryId: { id: "3", name: "DevOps and Cloud" },
     name: "Terraform",
     description:
-      "Understanding of terraform and terraform state, creation and use of modules. Experience with AWS and Azure Provider",
+        "Understanding of terraform and terraform state, creation and use of modules. Experience with AWS, Azure and GCP provider",
     technologies: "AWS Provider, Azure Provider, Packer",
     knowledgeExpertise: "MEDIUM_LOW",
   },
@@ -69,7 +104,7 @@ const skills1 = [
     knowledgeCategoryId: { id: "3", name: "DevOps and Cloud" },
     name: "Docker",
     description:
-      "Deep understanding of container technology, creation of dockerfiles, docker compose yml, docker in docker",
+        "Deep understanding of container technology, creation of dockerfiles, docker compose yml, docker in docker",
     technologies: "Docker, Docker compose",
     knowledgeExpertise: "MEDIUM_HIGH",
   },
@@ -78,9 +113,9 @@ const skills1 = [
     knowledgeCategoryId: { id: "3", name: "DevOps and Cloud" },
     name: "Kubernetes",
     description:
-      "Basic usage of kubectl: log information, scale pods, apply deploys",
+        "Creation, maintenance and configuration of a K8S cluster. Understanding of K8S architecture and concepts. ",
     technologies: "Kubernetes",
-    knowledgeExpertise: "BEGINNER",
+    knowledgeExpertise: "MEDIUM_HIGH",
   },
   {
     id: "9",
@@ -88,12 +123,9 @@ const skills1 = [
     name: "Google Cloud Platform",
     description: "Usage of GCP Console and basic usage of gcloud cli sdk",
     technologies:
-      "Pubsub, firestore, datastore, kubernetes engine, stackdriver / monitoring, cloud sql, IAM, Cloud Functions, Cloud Storage",
+        "Pubsub, firestore, datastore, kubernetes engine, stackdriver / monitoring, cloud sql, IAM, Cloud Functions, Cloud Storage, Big query",
     knowledgeExpertise: "MEDIUM_LOW",
   },
-];
-const skills2 = [
-  ,
   {
     id: "10",
     knowledgeCategoryId: { id: "3", name: "DevOps and Cloud" },
@@ -124,8 +156,16 @@ const skills2 = [
     knowledgeCategoryId: { id: "4", name: "Languages" },
     name: "English",
     description:
-      "Technical vocabulary, comfortable talking, writing and listening",
+      "B2. Technical vocabulary, comfortable talking, writing and listening",
     knowledgeExpertise: "MEDIUM_HIGH",
+  },
+  {
+    id: "13",
+    knowledgeCategoryId: { id: "4", name: "Languages" },
+    name: "French",
+    description:
+        "A1. Basic vocabulary, talking, writing and listening. In progress to reach B2 level 🫡",
+    knowledgeExpertise: "BEGINNER",
   },
   {
     id: "14",
@@ -133,7 +173,7 @@ const skills2 = [
     name: "SQL",
     description:
       "Queries, database modeling, database optimizations, PL/SQL, Triggers, Store procedures",
-    technologies: "Postgresql, MySQL and Oracle",
+    technologies: "Postgresql, MySQL, Oracle, Big Query",
     knowledgeExpertise: "MEDIUM_HIGH",
   },
   {

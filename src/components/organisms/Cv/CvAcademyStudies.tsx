@@ -11,14 +11,9 @@ const CvAcademyStudies: React.FC = () => {
       studies: [
         {
           career: "Software engineering",
-          startDate: "2018",
-          endDate: "2020",
-        },
-        {
-          career: "Technician - Programmer",
           startDate: "2016",
-          endDate: "2018",
-          achievement: "Fist place in grades of all graduates",
+          endDate: "2020",
+          achievement: "First in class among all graduates.",
         },
       ],
     },
