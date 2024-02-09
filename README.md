@@ -85,3 +85,6 @@ Imagine create highly customizable CVs with a simple JSON file. This feature is 
 It basically creates a React Page and then it's converted to PDF using Puppeteer. 
 
 Is this really a needed feature? No, but it shows what can be done with creativity and a little bit of time 🚀. I'm actually using this only for updating my CV
+
+### More features to come
+Eventually 😅
