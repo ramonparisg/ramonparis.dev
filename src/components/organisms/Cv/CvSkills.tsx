@@ -30,11 +30,11 @@ const CvSkills: React.FC<any> = ({ data }) => {
             </Text>
             <div
               className={
-                "container justify-content-space-between w-100 center-div"
+                "container justify-content-space-evenly w-100 center-div"
               }
             >
               {groupedData[key].map((values, i) => (
-                <div key={i} className={"item w-50"}>
+                <div key={i} className={`item ${groupedData[key].length >= 3 ? 'w-30' : 'w-50'}`}>
                   <Text size={"medium"} className={"big-weight center-text"}>
                     {values.name}
                   </Text>
