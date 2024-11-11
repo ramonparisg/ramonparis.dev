@@ -14,9 +14,11 @@ const Timeline: TimelineComponent = (props) => {
 
   return (
     <div className={`${style.timeline}`}>
-      <ul>
+      <ul className={"timeline-parent"}>
         {items.map((item, i) => (
-          <li key={i}>{item}</li>
+          <li key={i} className={"timeline-item"}>
+            {item}
+          </li>
         ))}
       </ul>
     </div>
