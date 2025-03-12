@@ -4,11 +4,14 @@ import React from "react";
 
 const CvSidebar: React.FC = () => {
   return (
-    <div className={"h-100 container column-flex"}>
-      <div className={"grow bg-dark-gray"}>
-        <ProfileSummary />
+      <div className={"h-100 container column-flex"}>
+          <div className={"bg-black"}>
+              <ProfileImage/>
+          </div>
+          <div className={"grow bg-dark-gray"}>
+              <ProfileSummary/>
+          </div>
       </div>
-    </div>
   );
 };
 

@@ -7,22 +7,35 @@ import styles from "./Styles.module.scss";
 const CvAcademyStudies: React.FC = () => {
   const data = [
     {
-      university: "INACAP University",
+      university: "Universidad INACAP",
       studies: [
         {
-          career: "Software engineering",
+          career: "Ingeniería en Informática",
           startDate: "2016",
           endDate: "2020",
-          achievement: "First in class among all graduates.",
+          achievement: "Primero en notas de la promoción de graduados",
+        },
+      ],
+    },
+    {
+      university: "Massachusetts Institute of Technology (MIT)",
+      studies: [
+        {
+          career:
+            "Diseño y Desarrollo de Productos y Servicios de Inteligencia Artificial",
+          startDate: "2024",
+          achievement: "",
+          certificate:
+            "https://certificates.emeritus.org/f1bf08fb-4adc-4a78-9eb1-72e9e98a920e#acc.oQkU9qdX",
         },
       ],
     },
   ];
 
   return (
-    <div className={"lh-4"}>
-      <TitleSeparator color={"green"}>🎓 Education</TitleSeparator>
-      <div style={{ marginLeft: "5%" }} className={"mt-3"}>
+    <div className={"w-100"}>
+      <TitleSeparator color={"green"}>🎓 Educación</TitleSeparator>
+      <div style={{ marginLeft: "2%" }} className={"mt-3"}>
         {data.map((d, i) => (
           <div key={i} className={`${styles.information}`}>
             <Text size={"big"} className={"medium-weight"}>
@@ -31,18 +44,32 @@ const CvAcademyStudies: React.FC = () => {
             <Timeline>
               {d.studies.map((studies, i) => (
                 <Timeline.Item key={i}>
-                  <div className={"lh-4 justify-text"}>
+                  <div className={"lh-4"}>
                     <Text size={"medium"} className={"big-weight"}>
                       {studies.career}
                     </Text>
                     <Text size={"small"} className={"dark-gray"}>
-                      {`${studies.startDate} - ${studies.endDate}`}
+                      {`${studies.startDate} ${
+                        studies.endDate ? `- ${studies.endDate}` : ""
+                      }`}
                     </Text>
                     {studies.achievement && (
                       <Text
                         size={"small"}
-                        className={"mt-2"}
+                        className={"mt-1"}
                       >{`🏆 ${studies.achievement}`}</Text>
+                    )}
+                    {studies.certificate && (
+                      <div className={"mt-2"}>
+                        <a
+                          href={studies.certificate}
+                          target={"_blank"}
+                          rel={"noreferrer"}
+                          className={"underline"}
+                        >
+                          <Text size={"small"}>📜 Ver certificado</Text>
+                        </a>
+                      </div>
                     )}
                   </div>
                 </Timeline.Item>
