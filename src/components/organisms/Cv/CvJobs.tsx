@@ -14,15 +14,15 @@ const CvJobs: React.FC = () => {
           id: "21",
           title: "Senior Technical Lead",
           startDate: "Oct 2023",
-          description: `Líder técnico senior de un equipo de 20 desarrolladores ubicados en Suramérica e India, encargado de la estandarización del proceso de orquestación de órdenes de compra y pagos dentro de la unidades de negocio del grupo Falabella. Participo en el diseño arquitecturas de microservicios y creación estándares. Tecnologías: Golang, Java, Spring Boot, GCP, Kubernetes, Terraform, Arquitectura Hexagonal, DDD, CQRS, entre otras.`,
+          description: `TL de un equipo con 20 desarrolladores ubicados en Suramérica e India, encargado de la gestión de órdenes de compra dentro de la unidades de negocio del grupo Falabella. Participo en el diseño arquitecturas y creación estándares. Tecnologías: Golang, Java, Spring Boot, GCP, Kubernetes, Terraform, Arquitectura Hexagonal, DDD, CQRS, entre otras.`,
           endDate: "Present",
           status: "ON_GOING",
-          achievements: [
-            "Migración de sistemas legados y estandarización de procesos, permitiendo reducir los tiempos de desarrollo y despliegue de nuevos servicios y así entregar más valor en menor tiempo",
-            "Capacidad de manejar +100.000 transacciones por minuto, permitiendo al negocio escalar durante eventos de alta demanda como black friday o similares",
-            "Reducción de un 40% en el tiempo de respuesta de los servicios",
-            "Reducción en un 60% costos de infraestructura",
-          ],
+          // achievements: [
+          //   "Migración de sistemas legados y estandarización de procesos, permitiendo reducir los tiempos de desarrollo y despliegue de nuevos servicios y así entregar más valor en menor tiempo",
+          //   "Capacidad de manejar +100.000 transacciones por minuto, permitiendo al negocio escalar durante eventos de alta demanda como black friday o similares",
+          //   "Reducción de un 40% en el tiempo de respuesta de los servicios",
+          //   "Reducción en un 60% costos de infraestructura",
+          // ],
         },
       ],
     },
@@ -37,9 +37,9 @@ const CvJobs: React.FC = () => {
           startDate: "Nov 2022",
           endDate: "Oct 2023",
           status: "FINISHED",
-          achievements: [
-            "Cumplimiento de entrega de proyectos en tiempo y forma",
-          ],
+          // achievements: [
+          //   "Cumplimiento de entrega de proyectos en tiempo y forma",
+          // ],
         },
         {
           id: "21",
