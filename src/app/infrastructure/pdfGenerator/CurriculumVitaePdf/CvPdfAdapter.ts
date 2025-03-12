@@ -13,7 +13,7 @@ export class CvPdfAdapter
   }
 
   async download(): Promise<Buffer> {
-    return await this.downloadFromPage(this.endpoint, "CV Ramón París");
+    return await this.downloadFromPage(this.endpoint);
   }
 }
 

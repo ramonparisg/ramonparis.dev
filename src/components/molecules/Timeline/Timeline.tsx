@@ -1,7 +1,7 @@
 import React from "react";
 import TimelineItem from "@components/molecules/Timeline/TimelineItem";
 import findByType from "@components/utils/ChildrenComponentFinder";
-import style from "./Timeline.module.css";
+import style from "./Timeline.module.scss";
 
 export interface TimelineComponent extends React.FC {
   Item: typeof TimelineItem;

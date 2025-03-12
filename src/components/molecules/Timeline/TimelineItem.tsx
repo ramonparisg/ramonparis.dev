@@ -1,6 +1,6 @@
 import React from "react";
 
-const TimelineItem: React.FC = ({ children }) => {
+const TimelineItem = ({ children }) => {
   return <div>{children}</div>;
 };
 
