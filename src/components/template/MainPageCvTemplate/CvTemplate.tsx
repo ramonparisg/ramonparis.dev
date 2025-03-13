@@ -35,7 +35,8 @@ const skills1 = [
     knowledgeCategoryId: { id: "1", name: "Backend" },
     name: "JavaScript",
     expertiseTime: "8 años",
-    description: "Nodejs, express, nestjs, pruebas unitarias y de integración",
+    description:
+      "Nodejs, express, nestjs, typescript, pruebas unitarias y de integración",
     knowledgeExpertise: "MEDIUM_HIGH",
     shortDescription: "(Express, NestJS, Jest)",
   },
@@ -131,7 +132,7 @@ const CvTemplate: React.FC<Props> = () => {
   return (
     <>
       <div id={"page-1"} className={"all-screen"}>
-        <div className={"container"}>
+        <div className={"flex flex-wrap"}>
           <div className={"bg-black white"}>
             <div className={"p-4"}>
               <div className={"center-text"}>
@@ -165,14 +166,14 @@ const CvTemplate: React.FC<Props> = () => {
             <ProfileSummaryHorizontal />
           </div>
         </div>
-        <div className={"container grow p-5"}>
+        <div className={"flex flex-wrap grow p-5"}>
           <CvJobs />
         </div>
       </div>
       <div
         id={"page-2"}
         className={
-          "container all-screen column-flex justify-content-space-between"
+          "flex flex-wrap all-screen column-flex justify-content-space-between"
         }
       >
         <div className={"w-100 p-5 grow"}>

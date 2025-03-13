@@ -14,7 +14,7 @@ const ProfileSummary: React.FC = () => {
               desde ahí poder aportar en soluciones técnicas. Motivado por el
               aprendizaje constante y desafíos tecnológicos
             </Text>
-            <Text size={"xs"} className={"mt-2"}>
+            <Text size={"small"} className={"mt-3"}>
               <b>🤓 Fun fact:</b> Este CV son en realidad componentes de React
               que generan dinámicamente un PDF utilizando NextJs + Puppeteer.{" "}
               <a
