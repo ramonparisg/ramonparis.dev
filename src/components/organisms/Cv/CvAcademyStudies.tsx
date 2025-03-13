@@ -23,6 +23,7 @@ const CvAcademyStudies: React.FC = () => {
         {
           career:
             "Diseño y Desarrollo de Productos y Servicios de Inteligencia Artificial",
+          description: "",
           startDate: "2024",
           achievement: "",
           certificate:
@@ -33,12 +34,12 @@ const CvAcademyStudies: React.FC = () => {
   ];
 
   return (
-    <div className={"w-100"}>
+    <div className={"w-100 mb-5"}>
       <TitleSeparator color={"green"}>🎓 Educación</TitleSeparator>
       <div style={{ marginLeft: "2%" }} className={"mt-3"}>
         {data.map((d, i) => (
           <div key={i} className={`${styles.information}`}>
-            <Text size={"big"} className={"medium-weight"}>
+            <Text size={"big"} className={"medium-weight mt-4 mb-1"}>
               {d.university}
             </Text>
             <Timeline>
@@ -53,6 +54,13 @@ const CvAcademyStudies: React.FC = () => {
                         studies.endDate ? `- ${studies.endDate}` : ""
                       }`}
                     </Text>
+
+                    {studies.description && (
+                      <Text
+                        size={"small"}
+                        className={"mt-1"}
+                      >{`${studies.description}`}</Text>
+                    )}
                     {studies.achievement && (
                       <Text
                         size={"small"}

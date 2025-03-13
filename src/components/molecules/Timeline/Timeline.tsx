@@ -13,15 +13,13 @@ const Timeline: TimelineComponent = (props) => {
   const items = findByType(children, TimelineItem);
 
   return (
-    <div className={`${style.timeline}`}>
-      <ul className={"timeline-parent"}>
-        {items.map((item, i) => (
-          <li key={i} className={"timeline-item"}>
-            {item}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className={`${style.timeline}`}>
+      {items.map((item, i) => (
+        <li key={i} className={"timeline-item"}>
+          {item}
+        </li>
+      ))}
+    </ul>
   );
 };
 

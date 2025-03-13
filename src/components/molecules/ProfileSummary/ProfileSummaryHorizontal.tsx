@@ -8,14 +8,13 @@ const ProfileSummary: React.FC = () => {
         <div className={"mw-100"}>
           <div className={" lh-4 "}>
             <Text size={"small"} className={"justify-text pr-2"}>
-              Ingeniero informático con más de 8 años de experiencia, enfocado
-              en el desarrollo de software, comprometido a las mejores prácticas
-              y en constante actualización de conocimientos en nuevas
-              tecnologías. Con habilidades de liderazgo, orientado a metas y con
-              sólidos conocimientos en backend, frontend, arquitectura de
-              software, google cloud platform, devops y más.
+              Hello world! Soy un ingeniero de software con más de 8 años de
+              experiencia desarrollando, diseñando soluciones y liderando
+              equipos. Me apasiona involucrarme en los procesos de negocio y
+              desde ahí poder aportar en soluciones técnicas. Motivado por el
+              aprendizaje constante y desafíos tecnológicos
             </Text>
-            <Text size={"xs"} className={"mt-1"}>
+            <Text size={"xs"} className={"mt-2"}>
               <b>🤓 Fun fact:</b> Este CV son en realidad componentes de React
               que generan dinámicamente un PDF utilizando NextJs + Puppeteer.{" "}
               <a

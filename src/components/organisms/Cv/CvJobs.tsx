@@ -12,53 +12,31 @@ const CvJobs: React.FC = () => {
       titles: [
         {
           id: "21",
-          title: "Senior Technical Lead",
-          startDate: "Oct 2023",
-          description: `TL de un equipo con 20 desarrolladores ubicados en Suramérica e India, encargado de la gestión de órdenes de compra dentro de la unidades de negocio del grupo Falabella. Participo en el diseño arquitecturas y creación estándares. Tecnologías: Golang, Java, Spring Boot, GCP, Kubernetes, Terraform, Arquitectura Hexagonal, DDD, CQRS, entre otras.`,
-          endDate: "Present",
-          status: "ON_GOING",
-          // achievements: [
-          //   "Migración de sistemas legados y estandarización de procesos, permitiendo reducir los tiempos de desarrollo y despliegue de nuevos servicios y así entregar más valor en menor tiempo",
-          //   "Capacidad de manejar +100.000 transacciones por minuto, permitiendo al negocio escalar durante eventos de alta demanda como black friday o similares",
-          //   "Reducción de un 40% en el tiempo de respuesta de los servicios",
-          //   "Reducción en un 60% costos de infraestructura",
-          // ],
-        },
-      ],
-    },
-    {
-      id: "3",
-      company: "Falabella Retail",
-      titles: [
-        {
-          id: "21",
-          title: "Technical Manager",
-          description: `Encargado de coordinar y liderar a líderes técnicos y desarrolladores en la creación de microservicios para la orquestación de eventos logísticos y de pago en el sistema back-office de una empresa de retail. Tecnologías utilizadas: Java, Spring Boot, Spring Reactive, Nodejs, ReactJS, GCP.`,
-          startDate: "Nov 2022",
-          endDate: "Oct 2023",
-          status: "FINISHED",
-          // achievements: [
-          //   "Cumplimiento de entrega de proyectos en tiempo y forma",
-          // ],
-        },
-        {
-          id: "21",
           title: "Technical Lead",
-          description:
-            "Líder técnico de un proyecto de orquestación de eventos de logística y pagos, donde diseño microservicios escalables y lidero un equipo de 8 personas en India y Chile.",
           startDate: "May 2021",
-          endDate: "Nov 2022",
-          status: "FINISHED",
+          description: `Lidero un equipo de 20 desarrolladores en Sudamérica e India, encargado del sistema de órdenes de compra corporativo del grupo Falabella.`,
+          endDate: "Presente",
+          status: "ON_GOING",
+          achievements: [
+            "Diseño y construcción de un sistema multitenant escalable y de alto rendimiento",
+            "Migración de sistemas legados y estandarización de procesos, permitiendo reducir los tiempos de desarrollo y despliegue de nuevas iniciativas y evolutivos.",
+            "Reducción de un 40% en el tiempo de respuesta de los servicios",
+            "Reducción en un 60% costos de infraestructura",
+          ],
         },
         {
           id: "21",
           title: "Senior Fullstack developer",
           description:
-            "Desarrollador en un equipo Scrum, encargado de diseñar soluciones, resolver consultas técnicas y coordinar integraciones con equipos en India.",
-          // "",
+            "Desarrollador en una célula Scrum. Tecnologías utilizadas: Java, Spring Boot, React, GCP y Kubernetes",
           startDate: "Feb 2020",
           endDate: "May 2021",
           status: "FINISHED",
+          projects: [
+            "Migración de sistemas legados a ecosistema cloud",
+            "Diseño y desarrollo de librerías corporativas para el desarrollo de aplicaciones",
+            "Diseño y desarrollo de frameworks de automatización de pruebas con Cucumber",
+          ],
         },
       ],
     },
@@ -70,9 +48,15 @@ const CvJobs: React.FC = () => {
           id: "2",
           title: "Consultor y desarrollador fullstack",
           description:
-            "Consultor y desarrollador en integraciones retail, con experiencia en soluciones de pagos, logística y ecommerce, utilizando herramientas como ReactJS, Java y AWS.",
-          startDate: "Dec 2018",
+            "Trabajé desarrollando soluciones para empresas dentro del Retail utilizando herramientas como ReactJS, Java y AWS.",
+          startDate: "Dic 2018",
           endDate: "Feb 2020",
+          projects: [
+            "Migración a nuevo POS Virtual para Easy - Cencosud",
+            "Desarrollo de aplicación para picking de productos en tiendas de Easy - Cencosud",
+            "Plataforma de entrega de beneficio a colaboradores para Caja los Andes",
+            "Plataforma de gestión de órdenes para Salcobrand",
+          ],
         },
       ],
     },
@@ -84,13 +68,13 @@ const CvJobs: React.FC = () => {
       <div style={{ marginLeft: "2%" }} className={"mt-3"}>
         {data.map((d, i) => (
           <div key={i} className={`${styles.information}`}>
-            <Text size={"big"} className={"medium-weight"}>
+            <Text size={"big"} className={"medium-weight mt-4 mb-1"}>
               {d.company}
             </Text>
             <Timeline>
               {d.titles.map((titles) => (
                 <Timeline.Item key={titles.id}>
-                  <div className={"lh-4 justify-text"}>
+                  <div className={"justify-text"}>
                     <Text size={"medium"} className={"big-weight"}>
                       {titles.title}
                     </Text>
@@ -102,11 +86,27 @@ const CvJobs: React.FC = () => {
                     </Text>
                     {titles.achievements && (
                       <>
-                        <Text size={"small"} className={"mt-1 medium-weight"}>
+                        <Text size={"small"} className={"my-2 medium-weight"}>
                           🏆 Logros
                         </Text>
-                        <ul>
+                        <ul className={"list-disc ml-6"}>
                           {titles.achievements.map((achievement, i) => (
+                            <li key={i}>
+                              <Text size={"small"} className={""}>
+                                {achievement}
+                              </Text>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                    {titles.projects && (
+                      <>
+                        <Text size={"small"} className={"my-2 medium-weight"}>
+                          🔬 Proyectos
+                        </Text>
+                        <ul className={"list-disc ml-6"}>
+                          {titles.projects.map((achievement, i) => (
                             <li key={i}>
                               <Text size={"small"} className={""}>
                                 {achievement}

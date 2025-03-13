@@ -7,12 +7,16 @@ import adapter from "@infrastructure/httpClient/BaseApi/CurriculumVitaeHttpClien
 const Home: NextPage<CurriculumVitaeDtoResponse> = ({ data }) => {
   return (
     <>
-      <CvTemplate data={data} />
+      <div className={"w-[810px] mx-auto"}>
+        <CvTemplate data={data} />
+      </div>
     </>
   );
 };
 
-export const getServerSideProps: GetServerSideProps<CurriculumVitaeDtoResponse> = async () => {
+export const getServerSideProps: GetServerSideProps<
+  CurriculumVitaeDtoResponse
+> = async () => {
   const cvData = await adapter.fetchData();
 
   return {

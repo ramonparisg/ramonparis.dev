@@ -6,13 +6,15 @@ import adapter from "@infrastructure/httpClient/BaseApi/CurriculumVitaeHttpClien
 
 const Resume: NextPage<CurriculumVitaeDtoResponse> = ({ data }) => {
   return (
-    <>
+    <div className={"w-full"}>
       <CvTemplate data={data} />
-    </>
+    </div>
   );
 };
 
-export const getServerSideProps: GetServerSideProps<CurriculumVitaeDtoResponse> = async () => {
+export const getServerSideProps: GetServerSideProps<
+  CurriculumVitaeDtoResponse
+> = async () => {
   const cvData = await adapter.fetchData();
 
   return {

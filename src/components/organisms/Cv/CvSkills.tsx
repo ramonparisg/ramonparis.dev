@@ -41,7 +41,7 @@ const CvSkills: React.FC<any> = ({ data }) => {
                 <div
                   key={i}
                   className={` ${
-                    groupedData[key].length >= 3 ? "w-30" : "w-50"
+                    groupedData[key].length >= 3 ? "w-30" : "w-[45%]"
                   }`}
                 >
                   <Text size={"medium"} className={"big-weight"}>
