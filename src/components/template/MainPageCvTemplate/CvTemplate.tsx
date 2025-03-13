@@ -148,7 +148,7 @@ const CvTemplate: React.FC<Props> = () => {
               </div>
               <div>
                 <div className={"mt-2"}>
-                  <Text size={"small"}>📍 Chile</Text>
+                  <Text size={"small"}>📍 Santiago, Chile</Text>
                   <Text size={"small"}>📧 pariis78@gmail.com</Text>
                   <Text size={"small"} className={""}>
                     ☎️ +56 9 9294 9532

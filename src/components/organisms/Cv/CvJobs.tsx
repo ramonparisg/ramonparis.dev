@@ -14,7 +14,7 @@ const CvJobs: React.FC = () => {
           id: "21",
           title: "Technical Lead",
           startDate: "May 2021",
-          description: `Lidero un equipo de 20 desarrolladores en Sudamérica e India, encargado del sistema de órdenes de compra corporativo del grupo Falabella.`,
+          description: `Lidero un equipo de 20 desarrolladores en Sudamérica e India encargado del sistema de órdenes de compra corporativo del grupo Falabella.`,
           endDate: "Presente",
           status: "ON_GOING",
           achievements: [
@@ -54,7 +54,7 @@ const CvJobs: React.FC = () => {
           projects: [
             "Migración a nuevo POS Virtual para Easy - Cencosud",
             "Desarrollo de aplicación para picking de productos en tiendas de Easy - Cencosud",
-            "Plataforma de entrega de beneficio a colaboradores para Caja los Andes",
+            "Plataforma de entrega de beneficios a colaboradores de Caja los Andes",
             "Plataforma de gestión de órdenes para Salcobrand",
           ],
         },
@@ -106,10 +106,10 @@ const CvJobs: React.FC = () => {
                           🔬 Proyectos
                         </Text>
                         <ul className={"list-disc ml-6"}>
-                          {titles.projects.map((achievement, i) => (
+                          {titles.projects.map((p, i) => (
                             <li key={i}>
                               <Text size={"small"} className={""}>
-                                {achievement}
+                                {p}
                               </Text>
                             </li>
                           ))}
