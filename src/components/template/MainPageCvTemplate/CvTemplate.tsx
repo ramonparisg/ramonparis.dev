@@ -4,6 +4,9 @@ import CvJobs from "@components/organisms/Cv/CvJobs";
 import CvSkills from "@components/organisms/Cv/CvSkills";
 import ProfileSummaryHorizontal from "@components/molecules/ProfileSummary/ProfileSummaryHorizontal";
 import Text from "@components/atoms/Text/Text";
+import githubIcon from "@assets/icons-github.svg";
+import linkedinIcon from "@assets/icons-linkedin.svg";
+import Image from "next/image";
 
 interface Props {
   data: string;
@@ -150,12 +153,24 @@ const CvTemplate: React.FC<Props> = () => {
                   <Text size={"small"} className={""}>
                     ☎️ +56 9 9294 9532
                   </Text>
-                  <a
-                    href="https://github.com/ramonparisg"
-                    className={"underline"}
-                  >
+                  <a href="https://github.com/ramonparisg">
                     <Text size={"small"} className={""}>
-                      🔗 Github: ramonparisg
+                      <Image
+                        alt={"Github icon"}
+                        src={githubIcon}
+                        className={"inline"}
+                      />{" "}
+                      <span className={"underline"}>ramonparisg</span>
+                    </Text>
+                  </a>
+                  <a href="https://www.linkedin.com/in/ramon-paris/">
+                    <Text size={"small"} className={""}>
+                      <Image
+                        alt={"Github icon"}
+                        src={linkedinIcon}
+                        className={"inline"}
+                      />{" "}
+                      <span className={"underline"}>/in/ramon-paris</span>
                     </Text>
                   </a>
                 </div>

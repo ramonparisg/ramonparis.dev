@@ -12,7 +12,7 @@ const ProfileSummary: React.FC = () => {
               experiencia desarrollando, diseñando soluciones y liderando
               equipos. Me apasiona involucrarme en los procesos de negocio y
               desde ahí poder aportar en soluciones técnicas. Motivado por el
-              aprendizaje constante y desafíos tecnológicos
+              aprendizaje constante y los desafíos tecnológicos
             </Text>
             <Text size={"small"} className={"mt-3"}>
               <b>🤓 Fun fact:</b> Este CV son en realidad componentes de React
