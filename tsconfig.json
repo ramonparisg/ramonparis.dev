@@ -6,25 +6,25 @@
         "components/*"
       ],
       "@domain/*": [
-        "app/core/domain/*"
+        "service/core/domain/*"
       ],
       "@ports/*": [
-        "app/core/ports/*"
+        "service/core/ports/*"
       ],
       "@useCases/*": [
-        "app/core/useCases/*"
+        "service/core/useCases/*"
       ],
       "@config/*": [
-        "app/infrastructure/config/*"
+        "service/infrastructure/config/*"
       ],
       "@infrastructure/*": [
-        "app/infrastructure/*"
+        "service/infrastructure/*"
       ],
       "@payloads/*": [
-        "app/infrastructure/dto/payloads/*"
+        "service/infrastructure/dto/payloads/*"
       ],
       "@env": [
-        "app/infrastructure/config/EnvironmentVariables"
+        "service/infrastructure/config/EnvironmentVariables"
       ],
       "@styles/*": [
         "styles/*"

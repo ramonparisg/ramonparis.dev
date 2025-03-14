@@ -1,0 +1,21 @@
+import { PdfGeneratorTemplate } from "../PdfGeneratorTemplate";
+import { buildLogger } from "../../config/LoggerConfig";
+import { CV_ENDPOINT } from "../../config/EnvironmentVariables";
+import { IGenerateCvDocumentPort } from "@ports/IGenerateCvDocumentPort";
+
+export class CvPdfAdapter
+  extends PdfGeneratorTemplate
+  implements IGenerateCvDocumentPort
+{
+  private readonly endpoint = CV_ENDPOINT;
+
+  constructor() {
+    super(buildLogger("CurriculumVitaePdf"));
+  }
+
+  async download(): Promise<Buffer> {
+    return await this.downloadFromPage(this.endpoint);
+  }
+}
+
+export default new CvPdfAdapter();
