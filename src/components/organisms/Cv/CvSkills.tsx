@@ -2,6 +2,12 @@ import React from "react";
 import TitleSeparator from "@components/molecules/Separators/TitleSeparator";
 import Text from "@components/atoms/Text/Text";
 import styles from "@components/organisms/Cv/Styles.module.scss";
+import { Skill } from "@domain/cv";
+
+interface Props {
+  data: Skill[];
+  skillsTag: string;
+}
 
 function groupBy(list, keyGetter) {
   const map = new Map();
@@ -17,11 +23,11 @@ function groupBy(list, keyGetter) {
   return Object.fromEntries(map);
 }
 
-const CvSkills: React.FC<any> = ({ data }) => {
+const CvSkills: React.FC<Props> = ({ data, skillsTag }) => {
   const groupedData = groupBy(data, (data) => data.knowledgeCategoryId.name);
   return (
     <>
-      <TitleSeparator color={"orange"}>👨🏽‍💻 Habilidades técnicas</TitleSeparator>
+      <TitleSeparator color={"orange"}>👨🏽‍💻 {skillsTag}</TitleSeparator>
       <div className={"container pl-3 pr-5"}>
         {Object.keys(groupedData).map((key, i) => (
           <div key={i} className={`${styles.information} w-100`}>

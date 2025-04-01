@@ -7,10 +7,10 @@ import Text from "@components/atoms/Text/Text";
 import githubIcon from "@assets/icons-github.svg";
 import linkedinIcon from "@assets/icons-linkedin.svg";
 import Image from "next/image";
-import type { Cv } from "../../../service/core/domain/cv";
+import { CvDb } from "@config/StaticDbConfig";
 
 interface Props {
-  data: Cv;
+  data: CvDb;
 }
 
 const CvTemplate: React.FC<Props> = ({ data }: Props) => {
@@ -65,7 +65,12 @@ const CvTemplate: React.FC<Props> = ({ data }: Props) => {
           </div>
         </div>
         <div className={"flex flex-wrap grow p-5"}>
-          <CvJobs experiences={data.experiences} />
+          <CvJobs
+            experiences={data.experiences}
+            projectTag={data.projectTag}
+            achievementTag={data.achievementTag}
+            experienceTag={data.experienceTag}
+          />
         </div>
       </div>
       <div
@@ -75,8 +80,12 @@ const CvTemplate: React.FC<Props> = ({ data }: Props) => {
         }
       >
         <div className={"w-100 p-5 grow"}>
-          <CvAcademyStudies />
-          <CvSkills data={data.skills} />
+          <CvAcademyStudies
+            education={data.education}
+            certificateTag={data.certificateTag}
+            educationTag={data.educationTag}
+          />
+          <CvSkills data={data.skills} skillsTag={data.skillTag} />
         </div>
         <div className={"w-100 bg-orange "} style={{ height: 40 }} />
       </div>

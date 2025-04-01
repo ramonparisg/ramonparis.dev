@@ -1,3 +1,3 @@
 export interface IGenerateCvDocumentPort {
-  download(): Promise<Buffer>;
+  download(lang: string): Promise<Buffer>;
 }

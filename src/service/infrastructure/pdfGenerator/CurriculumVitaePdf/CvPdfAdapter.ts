@@ -1,6 +1,6 @@
 import { PdfGeneratorTemplate } from "../PdfGeneratorTemplate";
-import { buildLogger } from "../../config/LoggerConfig";
-import { CV_ENDPOINT } from "../../config/EnvironmentVariables";
+import { buildLogger } from "@config/LoggerConfig";
+import { CV_ENDPOINT } from "@env";
 import { IGenerateCvDocumentPort } from "@ports/IGenerateCvDocumentPort";
 
 export class CvPdfAdapter
@@ -13,8 +13,10 @@ export class CvPdfAdapter
     super(buildLogger("CurriculumVitaePdf"));
   }
 
-  async download(): Promise<Buffer> {
-    return await this.downloadFromPage(this.endpoint);
+  async download(lang: string = "es"): Promise<Buffer> {
+    const url = `${this.endpoint}?lang=${lang}`;
+    console.log("url", url);
+    return await this.downloadFromPage(url);
   }
 }
 

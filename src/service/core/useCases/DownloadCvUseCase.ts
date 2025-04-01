@@ -8,7 +8,7 @@ export class DownloadCvUseCase implements IDownloadCvUseCase {
     this.documentGenerator = documentGenerator;
   }
 
-  download(): Promise<Buffer> {
-    return this.documentGenerator.download();
+  download(lang: string = "es"): Promise<Buffer> {
+    return this.documentGenerator.download(lang);
   }
 }

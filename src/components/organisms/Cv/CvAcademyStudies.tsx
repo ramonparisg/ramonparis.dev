@@ -3,43 +3,26 @@ import TitleSeparator from "@components/molecules/Separators/TitleSeparator";
 import Timeline from "@components/molecules/Timeline/Timeline";
 import Text from "@components/atoms/Text/Text";
 import styles from "./Styles.module.scss";
+import type { Education } from "@domain/cv";
 
-const CvAcademyStudies: React.FC = () => {
-  const data = [
-    {
-      university: "Universidad INACAP",
-      studies: [
-        {
-          career: "Ingeniería en Informática",
-          startDate: "2016",
-          endDate: "2020",
-          achievement: "Primero en notas de la promoción de graduados",
-        },
-      ],
-    },
-    {
-      university: "Massachusetts Institute of Technology (MIT)",
-      studies: [
-        {
-          career:
-            "Diseño y Desarrollo de Productos y Servicios de Inteligencia Artificial",
-          description: "",
-          startDate: "2024",
-          achievement: "",
-          certificate:
-            "https://certificates.emeritus.org/f1bf08fb-4adc-4a78-9eb1-72e9e98a920e#acc.oQkU9qdX",
-        },
-      ],
-    },
-  ];
+interface Props {
+  education: Education[];
+  educationTag: string;
+  certificateTag: string;
+}
 
+const CvAcademyStudies: React.FC<Props> = ({
+  education,
+  educationTag,
+  certificateTag,
+}) => {
   return (
     <div className={"w-100 mb-5"}>
-      <TitleSeparator color={"green"}>🎓 Educación</TitleSeparator>
-      <div style={{ marginLeft: "2%" }} className={"mt-3"}>
-        {data.map((d, i) => (
+      <TitleSeparator color={"green"}>🎓 {educationTag}</TitleSeparator>
+      <div style={{ marginLeft: "2%" }} className={"mt-1"}>
+        {education.map((d, i) => (
           <div key={i} className={`${styles.information}`}>
-            <Text size={"big"} className={"medium-weight mt-4 mb-1"}>
+            <Text size={"big"} className={"medium-weight mt-3 mb-1"}>
               {d.university}
             </Text>
             <Timeline>
@@ -75,7 +58,7 @@ const CvAcademyStudies: React.FC = () => {
                           rel={"noreferrer"}
                           className={"underline"}
                         >
-                          <Text size={"small"}>📜 Ver certificado</Text>
+                          <Text size={"small"}>📜 {certificateTag}</Text>
                         </a>
                       </div>
                     )}

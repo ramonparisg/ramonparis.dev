@@ -2,7 +2,9 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { downloadCvUseCase } from "@config/ConfigUseCases";
 
 const download = async (req: NextApiRequest, res: NextApiResponse) => {
-  const pdf = await downloadCvUseCase.download();
+  const { lang } = req.query;
+  console.log("req", lang);
+  const pdf = await downloadCvUseCase.download(lang as string);
   res.setHeader("Content-Type", "application/pdf");
   res.setHeader("Content-Disposition", "attachment; filename=download.pdf");
 

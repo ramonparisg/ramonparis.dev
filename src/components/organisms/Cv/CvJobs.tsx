@@ -7,12 +7,20 @@ import { Experience } from "../../../service/core/domain/cv";
 
 interface Props {
   experiences: Experience[];
+  experienceTag: string;
+  achievementTag: string;
+  projectTag: string;
 }
 
-const CvJobs: React.FC<Props> = ({ experiences = [] }) => {
+const CvJobs: React.FC<Props> = ({
+  experiences = [],
+  experienceTag = "",
+  projectTag,
+  achievementTag,
+}) => {
   return (
     <div className={""}>
-      <TitleSeparator color={"blue"}>💻 Experiencia</TitleSeparator>
+      <TitleSeparator color={"blue"}>💻 {experienceTag}</TitleSeparator>
       <div style={{ marginLeft: "2%" }} className={"mt-3"}>
         {experiences.map((d, i) => (
           <div key={i} className={`${styles.information}`}>
@@ -35,7 +43,7 @@ const CvJobs: React.FC<Props> = ({ experiences = [] }) => {
                     {titles.achievements && (
                       <>
                         <Text size={"small"} className={"my-2 medium-weight"}>
-                          🏆 Logros
+                          🏆 {achievementTag}
                         </Text>
                         <ul className={"list-disc ml-6"}>
                           {titles.achievements.map((achievement, i) => (
@@ -51,7 +59,7 @@ const CvJobs: React.FC<Props> = ({ experiences = [] }) => {
                     {titles.projects && (
                       <>
                         <Text size={"small"} className={"my-2 medium-weight"}>
-                          🔬 Proyectos
+                          🔬 {projectTag}
                         </Text>
                         <ul className={"list-disc ml-6"}>
                           {titles.projects.map((p, i) => (
