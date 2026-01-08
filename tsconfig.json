@@ -2,40 +2,18 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@components/*": [
-        "components/*"
-      ],
-      "@domain/*": [
-        "app/core/domain/*"
-      ],
-      "@ports/*": [
-        "app/core/ports/*"
-      ],
-      "@useCases/*": [
-        "app/core/useCases/*"
-      ],
-      "@config/*": [
-        "app/infrastructure/config/*"
-      ],
-      "@infrastructure/*": [
-        "app/infrastructure/*"
-      ],
-      "@payloads/*": [
-        "app/infrastructure/dto/payloads/*"
-      ],
-      "@env": [
-        "app/infrastructure/config/EnvironmentVariables"
-      ],
-      "@styles/*": [
-        "styles/*"
-      ]
+      "@components/*": ["components/*"],
+      "@domain/*": ["app/core/domain/*"],
+      "@ports/*": ["app/core/ports/*"],
+      "@useCases/*": ["app/core/useCases/*"],
+      "@config/*": ["app/infrastructure/config/*"],
+      "@infrastructure/*": ["app/infrastructure/*"],
+      "@payloads/*": ["app/infrastructure/dto/payloads/*"],
+      "@env": ["app/infrastructure/config/EnvironmentVariables"],
+      "@styles/*": ["styles/*"]
     },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -48,12 +26,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
